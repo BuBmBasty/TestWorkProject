@@ -11,7 +11,7 @@ namespace Birds
 
         public void SetAnimation(int frame, float mix)
         {
-            var materials = GetComponentInChildren<SkinnedMeshRenderer>().material;
+            var materials = GetComponentInChildren<MeshRenderer>().material;
         
             materials.SetFloat(FrameRate, frame);
             materials.SetFloat(MixAnimation, mix);
